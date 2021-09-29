@@ -8,21 +8,20 @@ const Home = () => {
     { title: 'React Blog', body: 'Lorem ipsum...', author: 'Luke', id: 3 },
   ]);
 
+  const [name, setName] = useState('Mario');
+
   const handleDelete = id => {
     const newBlogs = blogs.filter(blog => blog.id !== id);
     setBlogs(newBlogs);
   };
 
-  useEffect(() => console.log('Use Effect hook'));
+  useEffect(() => console.log('Use Effect hook'), [name]);
 
   return (
     <div className="home">
       <BlogList blogs={blogs} title="My Blogs" handleDelete={handleDelete} />
-      {/* <BlogList
-        blogs={blogs.filter(blog => blog.author === 'Luke')}
-        title="Luke's Blogs"
-        handleDelete={handleDelete}
-      /> */}
+      <button onClick={() => setName('Luigi')}>Click Me</button>
+      <p>{name}</p>
     </div>
   );
 };
