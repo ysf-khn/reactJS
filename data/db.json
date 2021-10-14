@@ -2,13 +2,13 @@
   "blogs": [
     {
       "title": "My first blog",
-      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted after watching so many blog posts",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted after watching so many blog posts.",
       "author": "mario",
       "id": 1
     },
     {
       "title": "Opening Party!",
-      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted after watching so many blog posts",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted after watching so many blog posts.",
       "author": "yusuf",
       "id": 2
     }
